@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Franky's Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" id="display" readonly value="0" />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="clearDisplay()" />
+            <input type="button" value="+/-" onclick="convertPlusMinus()" />
+            <input type="button" value="%" onclick="convertPercent()" />
+            <input
+              class="operation"
+              id="operation-divide"
+              type="button"
+              value="/"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="appendToDisplay('7')" />
+            <input type="button" value="8" onclick="appendToDisplay('8')" />
+            <input type="button" value="9" onclick="appendToDisplay('9')" />
+            <input
+              class="operation"
+              id="operation-multiply"
+              type="button"
+              value="x"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="appendToDisplay('4')" />
+            <input type="button" value="5" onclick="appendToDisplay('5')" />
+            <input type="button" value="6" onclick="appendToDisplay('6')" />
+            <input
+              class="operation"
+              id="operation-minus"
+              type="button"
+              value="-"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="appendToDisplay('1')" />
+            <input type="button" value="2" onclick="appendToDisplay('2')" />
+            <input type="button" value="3" onclick="appendToDisplay('3')" />
+            <input
+              class="operation"
+              id="operation-plus"
+              type="button"
+              value="+"
+            />
+          </div>
+          <div>
+            <input type="button" value="0" onclick="appendToDisplay('0')" />
+            <input type="button" value="." onclick="appendToDisplay('.')" />
+            <input type="button" value="=" onclick="calculate()" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
